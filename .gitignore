@@ -12,3 +12,14 @@ dist/
 .pytest_cache/
 .mypy_cache/
 .ruff_cache/
+
+# Local-only: operator / client knowledge / personal onboarding
+operator/
+knowledge/
+docs/START-HERE.md
+docs/STEP-*.md
+.cursor/
+
+# Secrets, chat exports, voice
+**/inbox/
+*.ogg
