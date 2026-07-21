@@ -18,7 +18,9 @@ Commercial AI SMM Operating System — connect brand knowledge, ask grounded que
 
 ## Docs
 
-- [Product architecture](docs/SMM-OS-PRODUCT-ARCHITECTURE.md) — canonical product north star
+One product story — start here:
+
+- [Product architecture](docs/SMM-OS-PRODUCT-ARCHITECTURE.md) — canonical north star
 - [Phase 0 plan](docs/PHASE-0-PRODUCT.md) — what ships first
 
 ## Layout

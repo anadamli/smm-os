@@ -706,8 +706,6 @@ Do **not** start publish integrations until approval UX is stable.
 |---|---|
 | `SMM-OS-PRODUCT-ARCHITECTURE.md` | Product north star |
 | **`PHASE-0-PRODUCT.md`** | **Active implementation plan** |
-| `PHASE-0-IMPLEMENTATION.md` | Legacy eng draft — ignore |
-| `SMM-OS-NOCODE.md` | Non-product prototype |
 
 **Owner:** Founder-architect  
 **Review:** weekly P0 gate (E-criteria)  

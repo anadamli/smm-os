@@ -8,11 +8,8 @@
 **Связь с другими документами:**
 | Документ | Роль |
 |---|---|
-| `SMM-OS-ARCHITECTURE.md` | Исследовательский max-scope blueprint (38 агентов) — reference, не implementation target |
-| `SMM-OS-NOCODE.md` | Личный прототип — **не** продукт |
-| `PHASE-0-IMPLEMENTATION.md` | Legacy eng draft — ignore |
-| `PHASE-0-PRODUCT.md` | **Active P0 implementation** (schema, API, LangGraph) |
 | **Этот файл** | **Каноническая архитектура продукта** |
+| `PHASE-0-PRODUCT.md` | Active P0 implementation (schema, API, LangGraph) |
 
 ---
 
@@ -755,4 +752,4 @@ Enterprise add-ons later: SSO, DPA, region pinning, VPC — architecture must no
 ---
 
 **This document is the product north star.**  
-Next artifact to produce when ready: `PHASE-0-PRODUCT.md` — concrete schema + API + first LangGraph graph aligned to P0 above.
+Active implementation plan: [`PHASE-0-PRODUCT.md`](./PHASE-0-PRODUCT.md).

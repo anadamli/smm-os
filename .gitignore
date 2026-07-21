@@ -18,6 +18,7 @@ operator/
 knowledge/
 docs/START-HERE.md
 docs/STEP-*.md
+docs/archive/
 .cursor/
 
 # Secrets, chat exports, voice
