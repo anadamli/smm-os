@@ -1,0 +1,54 @@
+# Brand retrieval eval questions (Slice 1)
+
+# Manual checklist: after ingest, POST /v1/search for each query.
+# Pass = top hits cite the expected brand-pack section (or clear paraphrase).
+# Do not commit real brand-pack text here — only questions + expected section labels.
+
+workspace: aifinpay-local
+source_files:
+  - knowledge/brand-pack-v1.md
+  - knowledge/social-voice-v1.md
+
+questions:
+  - id: Q1
+    query: "Who is our ideal customer / ICP?"
+    expect_section: "3. ICP"
+    keywords: ["icp", "developers", "founders", "клиент", "agent"]
+  - id: Q2
+    query: "What is AiFinPay positioning in one sentence?"
+    expect_section: "4. Позиционирование"
+    keywords: ["позицион", "aifinpay", "settlement", "agent"]
+  - id: Q3
+    query: "What tone of voice should public posts use?"
+    expect_section: "5. Tone of voice"
+    keywords: ["tone", "voice", "голос", "tone of voice"]
+  - id: Q4
+    query: "What product facts can we claim publicly?"
+    expect_section: "6. Product facts"
+    keywords: ["product", "claim", "mainnet", "факт", "запрещ"]
+  - id: Q5
+    query: "What is the founder POV for content?"
+    expect_section: "7. Founder POV"
+    keywords: ["founder", "pov", "voice", "голос"]
+  - id: Q6
+    query: "What proof or evidence can we use in posts?"
+    expect_section: "8. Proof"
+    keywords: ["proof", "доказатель", "aifinpay.io", "live"]
+  - id: Q7
+    query: "What content guardrails or forbidden claims apply?"
+    expect_section: "9. Content guardrails"
+    keywords: ["нельзя", "запрещ", "custody", "promises", "guardrail"]
+  - id: Q8
+    query: "Which social platforms are in scope?"
+    expect_section: "10. Контент-платформы"
+    keywords: ["linkedin", "instagram", "twitter", "threads", "платформ"]
+  - id: Q9
+    query: "How should LinkedIn voice sound compared to Instagram?"
+    expect_section: "Social Voice — platforms"
+    keywords: ["linkedin", "instagram", "voice", "голос"]
+  - id: Q10
+    query: "What is this / this is not us for brand voice?"
+    expect_section: "Social Voice — это мы / это не мы"
+    keywords: ["мы", "не мы", "voice", "это"]
+
+pass_rule: "At least 7/10 questions return a top-5 hit whose text clearly belongs to expect_section."

@@ -100,7 +100,7 @@ Success = Ana spends less time on repetitive copy/QC/packaging; founder still ap
 | Role | Name | Decision needed |
 |------|------|-----------------|
 | Operator | Ana | Accept MVP scope; run file workflow during build |
-| Developer | daochild / dev group | Confirm Option A vs org repo direction |
+| Developer | @pironmind | Confirmed thin tool in Ana repo; finishes AiFinPay-smm farm |
 | Founder | AiFinPay | GitHub visibility; approve content (unchanged gate) |
 | CMO/brand | — | Brand-pack remains canon |
 
@@ -112,19 +112,19 @@ Success = Ana spends less time on repetitive copy/QC/packaging; founder still ap
 - [x] `docs/TODO-MVP.md` — sequential build tasks
 - [x] `docs/GAP-ANALYSIS.md` — three-way comparison
 - [x] `docs/PLAN-MVP.md` — architecture + first slices
-- [ ] Founder/dev sign-off on Option A
-- [ ] Slice 1 implementation (after sign-off)
+- [x] Founder/dev sign-off on Option A — @pironmind 2026-07-24 (separate thin MVP)
+- [x] Slice 1 implementation (knowledge ingest) — 2026-07-24
 
 ---
 
 ## 9. References
 
 - Local operator: `operator/README.md`, `operator/templates/`
-- Brand canon: `knowledge/brand-pack-v1.md` (local only)
+- Brand canon: `knowledge/brand-pack-v1.md` (local only — never commit)
 - Product north star (trimmed for MVP): `docs/SMM-OS-PRODUCT-ARCHITECTURE.md`, `docs/PHASE-0-PRODUCT.md`
-- Org reference: `/Users/ana/Projects/work/AiFinPay-smm` (cloned locally)
+- Org reference: `coinsecuritiescompany/AiFinPay-smm` (clone locally as needed)
 - Dev onboarding gist: https://gist.github.com/daochild/98327b7f32e98c2e48086100b4335071
 
 ---
 
-*Version: 2026-07-24 · Owner: Ana · Status: Planning — pending dev/founder ack*
+*Version: 2026-07-24 · Owner: Ana · Status: Active MVP build — Option A confirmed*

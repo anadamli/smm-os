@@ -14,7 +14,7 @@ Commercial AI SMM Operating System — connect brand knowledge, ask grounded que
 | MVP plan & tasks | [PLAN-MVP.md](docs/PLAN-MVP.md) · [TODO-MVP.md](docs/TODO-MVP.md) · [GAP-ANALYSIS.md](docs/GAP-ANALYSIS.md) |
 | Product architecture (long-term) | Done — see docs |
 | Phase 0 plan (full SaaS — deferred) | Reference only |
-| FastAPI brain (`/health`, knowledge ingest/search) | Skeleton in progress |
+| FastAPI brain (`/health`, knowledge ingest/search) | **Slice 1 live** — brand ingest + eval scripts |
 | Dashboard (`apps/web`) | Not started |
 | Agents (LangGraph) | Deferred — thin draft pipeline first |
 

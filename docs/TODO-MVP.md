@@ -24,11 +24,11 @@ Legend: `[ ]` todo · `[~]` in progress · `[x]` done
 
 ## Phase 1 — Knowledge path (Slice 1)
 
-- [ ] **1.1** ADR: single workspace, no auth for local MVP; env-based workspace id
-- [ ] **1.2** Script: ingest `knowledge/brand-pack-v1.md` + `social-voice-v1.md` → `/v1/ingest/text` (local path, not committed)
-- [ ] **1.3** Verify search returns cited chunks for 5 eval questions (manual checklist)
-- [ ] **1.4** Add `eval/brand_questions.yaml` — 10 retrieval Qs from real brand-pack sections
-- [ ] **1.5** Document run steps in `apps/api/README.md` (keys: Qdrant + one LLM only)
+- [x] **1.1** ADR: single workspace, no auth for local MVP; env-based workspace id *(docs/adr/001)*
+- [x] **1.2** Script: ingest `knowledge/brand-pack-v1.md` + `social-voice-v1.md` *(scripts/ingest_brand_knowledge.py)*
+- [x] **1.3** Verify search returns cited chunks for eval questions *(scripts/eval_brand_search.py)*
+- [x] **1.4** Add `eval/brand_questions.yaml` — 10 retrieval Qs
+- [x] **1.5** Document run steps in `apps/api/README.md`
 
 **Exit:** Ana can ask "what is our ICP?" and get brand-pack-backed answer with citations.
 

@@ -1,6 +1,6 @@
 # MVP Implementation Plan — Planning Only
 
-> **Status:** Planning document — **no `apps/` code changes in this phase.**  
+> **Status:** Slice 1 done 2026-07-24 — brand ingest + eval green. Next: Slice 2 drafts.  
 > **Canon for scope:** [`SOW.md`](../SOW.md) · **Tasks:** [`TODO-MVP.md`](./TODO-MVP.md) · **Gap:** [`GAP-ANALYSIS.md`](./GAP-ANALYSIS.md)
 
 ---
