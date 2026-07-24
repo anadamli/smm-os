@@ -10,18 +10,22 @@ Commercial AI SMM Operating System — connect brand knowledge, ask grounded que
 
 | Area | State |
 |------|--------|
-| Product architecture | Done — see docs |
-| Phase 0 plan | Active |
+| **MVP scope (operator tool)** | **Active — [SOW.md](SOW.md)** |
+| MVP plan & tasks | [PLAN-MVP.md](docs/PLAN-MVP.md) · [TODO-MVP.md](docs/TODO-MVP.md) · [GAP-ANALYSIS.md](docs/GAP-ANALYSIS.md) |
+| Product architecture (long-term) | Done — see docs |
+| Phase 0 plan (full SaaS — deferred) | Reference only |
 | FastAPI brain (`/health`, knowledge ingest/search) | Skeleton in progress |
 | Dashboard (`apps/web`) | Not started |
-| Agents (LangGraph) | After knowledge path is solid |
+| Agents (LangGraph) | Deferred — thin draft pipeline first |
 
 ## Docs
 
 One product story — start here:
 
-- [Product architecture](docs/SMM-OS-PRODUCT-ARCHITECTURE.md) — canonical north star
-- [Phase 0 plan](docs/PHASE-0-PRODUCT.md) — what ships first
+- **[SOW.md](SOW.md)** — Ana MVP scope (what we build now)
+- [MVP plan](docs/PLAN-MVP.md) — architecture + build slices
+- [Product architecture](docs/SMM-OS-PRODUCT-ARCHITECTURE.md) — long-term north star
+- [Phase 0 plan](docs/PHASE-0-PRODUCT.md) — full SaaS reference (trimmed for MVP)
 
 ## Layout
 
