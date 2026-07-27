@@ -157,7 +157,7 @@ No `/v1/runs`, no `/v1/approvals` DB until slice 3 justifies it.
 | Q3 | Which **LLM key** should Ana use for local dev (DeepSeek/OpenAI)? | Dev |
 | Q4 | Is **Qdrant Cloud** ok or local Docker only? | Dev |
 | Q5 | Founder still **paused on content** until repo clear? | Founder |
-| Q6 | Should planning docs be **committed/pushed** to Ana's remote now? | Founder (Ana waits for ask) |
+| Q6 | Should planning docs be **committed/pushed** to Ana's remote now? | **Yes** — pushed 2026-07-24; ongoing product docs only |
 | Q7 | Any **compliance** requirement to keep all generation on VPN/VPS? | Dev / compliance |
 
 ---
@@ -173,18 +173,36 @@ No `/v1/runs`, no `/v1/approvals` DB until slice 3 justifies it.
 
 ---
 
-## 9. Relationship to full SMM OS vision
+## 9. Relationship to full SMM OS vision (do not stop at MVP)
 
-`docs/SMM-OS-PRODUCT-ARCHITECTURE.md` remains the **long-term north star** (multi-tenant SaaS). This MVP is a **strangler fig leaf**: each operator file replaced by automation per `operator/README.md` map. If the org later merges Ana's tool into `AiFinPay-smm`, slices 1–3 become modules (`knowledge_service`, `workflow`, `export`) — not a throwaway prototype.
+`docs/SMM-OS-PRODUCT-ARCHITECTURE.md` + org repo `AiFinPay-smm` remain the **scale target**. Ana MVP is a **strangler**: ship value now, grow toward the farm — not a dead-end prototype.
+
+### Why two stores (remember this)
+
+| Store | Job | Now (MVP) | Later (scale toward reference) |
+|-------|-----|-----------|--------------------------------|
+| **Qdrant** | Vector search over brand text (“find relevant chunks”) | **In use** — brand-pack + social-voice chunks | Same role; more docs, hybrid search, per-workspace filters |
+| **Supabase / Postgres** | Source of truth: users, workspaces, drafts, approvals, audit | Keys in `.env` from early setup; **API not using DB yet** (drafts still markdown) | Wire auth, RLS, tables for drafts/approvals — as in Phase 0 / AiFinPay-smm Postgres |
+
+Qdrant ≠ database of posts. It is the **memory index** so drafts stay grounded. Supabase is the **system of record** when we leave “files only.”
+
+### Scale ladder (after Slice 2–3)
+
+1. Keep thin draft/QC/export working for Ana.
+2. Move draft + approval state from markdown → **Postgres (Supabase)** — same shapes as org repo where possible.
+3. Cherry-pick from `AiFinPay-smm`: HITL gates, tests, channel previews — **not** full 28-agent autopilot until Ana path is stable.
+4. Optional merge: Ana modules → org farm when @pironmind / founder ask.
+
+If the org later merges Ana's tool into `AiFinPay-smm`, slices 1–3 become modules (`knowledge`, `workflow`, `export`) — not throwaway work.
 
 ---
 
-## 10. Immediate next actions (after planning ack)
+## 10. Immediate next actions
 
-1. Dev/founder reply to Q1–Q3.
-2. Start **TODO 1.1–1.5** (knowledge slice).
-3. Ana continues **client-ops** on existing Wave 1 texts — no new posts until founder signals.
+1. **Slice 2** — implement `POST /v1/drafts` + brand guardian (TODO 2.1–2.3).
+2. Dev/founder: remaining open items in §7 (Q4–Q5, Q7) as needed for keys/compliance.
+3. **Client content** runs in local `operator/` — not tracked here; does not block Slice 2.
 
 ---
 
-*Last updated: 2026-07-24 · Planning only — no code shipped*
+*Last updated: 2026-07-27 · Slice 1 shipped; Slice 2 next*

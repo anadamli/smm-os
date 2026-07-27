@@ -12,7 +12,7 @@ Legend: `[ ]` todo · `[~]` in progress · `[x]` done
 - [x] **P0.1** Write `SOW.md` with MVP scope and out-of-scope list *(2026-07-24)*
 - [x] **P0.2** Write `docs/GAP-ANALYSIS.md` *(2026-07-24)*
 - [x] **P0.3** Write `docs/PLAN-MVP.md` *(2026-07-24)*
-- [x] **P0.4** Update `operator/founder-inbox.md` + create `operator/TOMORROW.md` *(2026-07-24)*
+- [x] **P0.4** Update `operator/founder-inbox.md` + day-status *(2026-07-24)* — note: `TOMORROW.md` pattern retired; use `operator/MAP.md` «Сейчас» only
 - [x] **P0.5** Ana sent planning summary + repo question to @pironmind / group *(2026-07-24)*
 - [x] **P0.6** Dev confirmed: thin tool in Ana repo; AiFinPay-smm = his farm / reference *(2026-07-24)*
 - [x] **P0.7** Direction clear: two tracks (his prod farm vs Ana MVP); content still waits founder Wave 1 approve
@@ -62,7 +62,7 @@ Legend: `[ ]` todo · `[~]` in progress · `[x]` done
 
 - [ ] **4.1** Minimal Next.js page: list pending approvals (read-only local)
 - [ ] **4.2** GitHub Actions: lint + test on `apps/api` only
-- [ ] **4.3** README status table → link SOW + plan (done in planning)
+- [x] **4.3** README status table → link SOW + plan *(2026-07-27)*
 - [ ] **4.4** Founder demo: 5-min screen recording of draft flow
 - [ ] **4.5** Revisit: merge useful tests from `AiFinPay-smm` (isolation, ingest) — copy, don't fork
 
@@ -90,4 +90,4 @@ P0 alignment → 1.x knowledge → 2.x draft+QC → 3.x export → 4.x polish
 
 ---
 
-*Last updated: 2026-07-24*
+*Last updated: 2026-07-27*
