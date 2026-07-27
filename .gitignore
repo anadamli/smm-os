@@ -20,6 +20,7 @@ docs/START-HERE.md
 docs/STEP-*.md
 docs/archive/
 .cursor/
+.vscode/
 
 # Secrets, chat exports, voice
 **/inbox/
