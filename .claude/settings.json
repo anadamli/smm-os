@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git status*)",
+      "Bash(git diff*)",
+      "Bash(git log*)",
+      "Bash(git branch*)",
+      "Bash(pytest*)",
+      "Bash(python -m pytest*)",
+      "Bash(uvicorn*)",
+      "Bash(pip install -r requirements.txt*)",
+      "Bash(python scripts/ingest_brand_knowledge.py*)",
+      "Bash(python scripts/eval_brand_search.py*)",
+      "Bash(python scripts/draft_post.py*)",
+      "Bash(python ../../scripts/ingest_brand_knowledge.py*)",
+      "Bash(python ../../scripts/eval_brand_search.py*)",
+      "Bash(python ../../scripts/draft_post.py*)",
+      "Bash(python3 scripts/ingest_brand_knowledge.py*)",
+      "Bash(python3 scripts/eval_brand_search.py*)",
+      "Bash(python3 scripts/draft_post.py*)"
+    ]
+  }
+}
