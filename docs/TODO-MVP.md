@@ -79,8 +79,8 @@ Legend: `[ ]` todo · `[~]` in progress · `[x]` done
 - [ ] Telegram founder inbox webhook
 - [ ] Viral content generator (ref: `daochild/viral-content-generation-cli`, Kling AI +
       Gemini Nano Banana; generation only, no posting/idea-search module per dev) —
-      overlaps with already-decided Out of Scope (visual gen = ChatGPT + Figma, manual
-      eye-check). Reviewed 01.08 — parked, see `operator/decision-log.md`.
+      overlaps with already-decided Out of Scope (visual gen = ChatGPT, manual
+      eye-check, no Figma step). Reviewed 01.08 — parked, see `operator/decision-log.md`.
 
 ---
 

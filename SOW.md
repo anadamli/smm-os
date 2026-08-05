@@ -57,7 +57,7 @@ Success = Ana spends less time on repetitive copy/QC/packaging; founder still ap
 | Web live research (Tavily/Serper) | Brand-pack is canon; web = Phase 2+ |
 | Google Drive / Notion ingest | Manual markdown/PDF upload first |
 | Docker Compose full stack tonight | Planning only until SOW approved |
-| Visual/image generation | Operator owns via ChatGPT + Figma logo composite |
+| Visual/image generation | Operator owns via ChatGPT, published after eye-check (no Figma/logo step) |
 | Replacing Cursor skills entirely | Tool augments existing `brand-grounded-copy` workflow |
 
 ---
