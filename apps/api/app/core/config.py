@@ -23,6 +23,8 @@ class Settings(BaseSettings):
     embedding_model: str = "gemini-embedding-001"
     embedding_dim: int = 3072
 
+    llm_model: str = "gemini-2.0-flash"
+
     # P0 demo tenant until auth is wired
     demo_workspace_id: str = "00000000-0000-0000-0000-000000000001"
 

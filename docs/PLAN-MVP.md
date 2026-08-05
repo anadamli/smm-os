@@ -1,13 +1,13 @@
 # MVP Implementation Plan — Planning Only
 
-> **Status:** Slice 1 done 2026-07-24 — brand ingest + eval green. Next: Slice 2 drafts.  
+> **Status:** Slice 2 done 2026-07-27 — drafts + brand QC. Next: Slice 3 export.  
 > **Canon for scope:** [`SOW.md`](../SOW.md) · **Tasks:** [`TODO-MVP.md`](./TODO-MVP.md) · **Gap:** [`GAP-ANALYSIS.md`](./GAP-ANALYSIS.md)
 
 ---
 
 ## 1. Problem statement
 
-Ana spends significant time on repeatable work: drafting posts from brand-pack, checking claims/CTAs, and filling approval/designer templates. The org built a full SMM OS (`AiFinPay-smm`); the developer asked for a **smaller, operator-centric tool** planned before further coding. Ana's file-based workflow already works — the product should **accelerate** it, not replace it with a 28-agent platform.
+Ana spends significant time on repeatable work: drafting posts from brand-pack, checking claims/CTAs, and filling approval templates. The org built a full SMM OS (`AiFinPay-smm`); the developer asked for a **smaller, operator-centric tool** planned before further coding. Ana's file-based workflow already works — the product should **accelerate** it, not replace it with a 28-agent platform.
 
 ---
 
@@ -83,7 +83,7 @@ Base: `http://localhost:8000`
 | POST | `/v1/search` | Exists — citation retrieval |
 | POST | `/v1/drafts` | **New** — brief → draft + scorecard |
 | GET | `/v1/drafts/{id}` | **New** — retrieve draft |
-| POST | `/v1/drafts/{id}/export` | **New** — `{ format: "founder" \| "designer" \| "content-plan-row" }` |
+| POST | `/v1/drafts/{id}/export` | **New** — `{ format: "founder" \| "image-prompts" \| "content-plan-row" }` |
 
 No `/v1/runs`, no `/v1/approvals` DB until slice 3 justifies it.
 
@@ -116,7 +116,7 @@ No `/v1/runs`, no `/v1/approvals` DB until slice 3 justifies it.
 **Goal:** Zero manual template filling.
 
 - Map draft → `post-for-approval.md` sections.
-- Map draft → `designer-brief.md` sections.
+- Map draft → `image-prompt-pack.md` sections.
 - Optional: emit content-plan row markdown for paste.
 
 **Done when:** Ana runs one command and sends founder pack without editing structure.

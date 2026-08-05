@@ -36,10 +36,10 @@ Legend: `[ ]` todo · `[~]` in progress · `[x]` done
 
 ## Phase 2 — Draft + brand check (Slice 2)
 
-- [ ] **2.1** `POST /v1/drafts` — input: `{ platform, theme, brief }` → retrieval + LLM draft
-- [ ] **2.2** Brand guardian pass: parse output for `TBD`, banned phrases, wrong URLs
-- [ ] **2.3** Scorecard JSON: `{ citations[], flags[], pass: bool }`
-- [ ] **2.4** Wire to Cursor skill or CLI: `python -m scripts.draft_post --platform linkedin --theme "..."` 
+- [x] **2.1** `POST /v1/drafts` — input: `{ platform, theme, brief }` → retrieval + LLM draft *(2026-07-27)*
+- [x] **2.2** Brand guardian pass: parse output for `TBD`, banned phrases, wrong URLs *(2026-07-27)*
+- [x] **2.3** Scorecard JSON: `{ citations[], flags[], pass: bool }` *(2026-07-27)*
+- [x] **2.4** Wire to CLI: `python ../../scripts/draft_post.py --platform linkedin --theme "..."` *(2026-07-27)*
 - [ ] **2.5** Human test: regenerate Wave 1 post (LI-1) and compare to manual draft in content-plan
 
 **Exit:** Draft + QC in one command; flags visible before founder sees text.
@@ -51,7 +51,7 @@ Legend: `[ ]` todo · `[~]` in progress · `[x]` done
 - [ ] **3.1** Persist drafts in SQLite or JSON under `operator/.drafts/` (local, gitignored)
 - [ ] **3.2** Status flow: `draft → reviewed → ready_for_founder → approved | rejected`
 - [ ] **3.3** Export markdown matching `operator/templates/post-for-approval.md`
-- [ ] **3.4** Export designer brief matching `operator/templates/designer-brief.md`
+- [ ] **3.4** Export image prompt pack matching `operator/templates/image-prompt-pack.md`
 - [ ] **3.5** Content-plan helper: append row to `content-plan-14d.md` format (or generate snippet for paste)
 
 **Exit:** End-to-end brief → draft → QC → founder pack without manual template filling.
@@ -77,6 +77,10 @@ Legend: `[ ]` todo · `[~]` in progress · `[x]` done
 - [ ] Autopilot / Celery scheduler
 - [ ] Analytics agent + weekly auto-report
 - [ ] Telegram founder inbox webhook
+- [ ] Viral content generator (ref: `daochild/viral-content-generation-cli`, Kling AI +
+      Gemini Nano Banana; generation only, no posting/idea-search module per dev) —
+      overlaps with already-decided Out of Scope (visual gen = ChatGPT + Figma, manual
+      eye-check). Reviewed 01.08 — parked, see `operator/decision-log.md`.
 
 ---
 
@@ -90,4 +94,4 @@ P0 alignment → 1.x knowledge → 2.x draft+QC → 3.x export → 4.x polish
 
 ---
 
-*Last updated: 2026-07-27*
+*Last updated: 2026-08-01*

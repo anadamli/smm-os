@@ -1,6 +1,6 @@
 # SMM OS API
 
-Thin FastAPI brain for Ana's MVP: ingest brand knowledge → search with citations → (later) drafts + QC.
+Thin FastAPI brain for Ana's MVP: ingest brand knowledge → search with citations → grounded drafts + QC.
 
 ## Setup
 
@@ -43,6 +43,45 @@ Manual search via API:
 curl -s http://127.0.0.1:8000/v1/search \
   -H 'content-type: application/json' \
   -d '{"query":"Who is our ICP?","top_k":5}'
+```
+
+## Slice 2 — grounded draft + brand QC
+
+Requires Slice 1 ingest first (Qdrant populated).
+
+**CLI (recommended):**
+
+```bash
+cd apps/api
+source .venv/bin/activate
+python ../../scripts/draft_post.py \
+  --platform linkedin \
+  --theme "card on file is hidden human in every agent" \
+  --brief "Problem framing LI-1; CTA aifinpay.io; multichain x12"
+```
+
+Exit code `0` = QC pass, `2` = draft generated but flags present.
+
+**API:**
+
+```bash
+curl -s http://127.0.0.1:8000/v1/drafts \
+  -H 'content-type: application/json' \
+  -d '{
+    "platform": "linkedin",
+    "theme": "card on file is hidden human in every agent",
+    "brief": "Problem framing LI-1"
+  }' | jq .
+```
+
+Response shape: `{ id, draft, citations[], scorecard: { flags[], pass }, pass }`.
+
+Retrieve by id: `GET /v1/drafts/{id}` (in-memory until Slice 3 persistence).
+
+**Tests (no API keys):**
+
+```bash
+cd apps/api && source .venv/bin/activate && pytest tests/ -q
 ```
 
 ## Workspace model

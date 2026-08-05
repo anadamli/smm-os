@@ -28,7 +28,7 @@
 | **Brand / claim check** | brand_review + compliance_review stages | Not built | Manual QC in skill + eye | Yes — automated flags | **Keep** (build); **reference** AiFinPay checks |
 | **Human approval (HITL)** | Two gates: plan + content; DB + UI | Not built | `post-for-approval.md`, `decision-log.md` | Yes — export to templates | **Keep** (markdown first); **defer** full UI |
 | **Content plan / calendar** | Autopilot generates plans | Not built | `content-plan-14d.md` (20 drafts) | Yes — helper only | **Keep** (operator file); **drop** autopilot |
-| **Designer handoff** | Channel previews, media gen at publish | Not built | `designer-brief.md` + `visuals/{id}/` | Yes — export brief | **Keep** (template export) |
+| **Visual handoff** | Channel previews, media gen at publish | Not built | `image-prompt-pack.md` + `visuals/{id}/` | Yes — export prompts | **Keep** (template export) |
 | **Founder inbox / decisions** | Obsidian memory, audit events | Not built | `founder-inbox.md`, `decision-log.md` | Yes — manual for MVP | **Keep** (files); **defer** TG webhook |
 | **Publish to social** | Postiz, Telegram, Discord, dry_run/live | Not built | No access; ⏸ paused | No | **Drop** for MVP |
 | **21 channel contracts** | Full catalog | Not built | LI, IG, X, Threads in plan | Partial — 4 platforms in content-plan | **Defer** extra channels |
@@ -67,7 +67,7 @@
 | 2. Draft post text | `brand-grounded-copy` skill | F2 draft generation |
 | 3. Check TBD / claims / CTA | Manual + skill | F3 brand check |
 | 4. Pack for founder | `post-for-approval.md` | F4 + F6 export |
-| 5. Pack for designer | `designer-brief.md` | F6 export |
+| 5. Pack for publish | `image-prompt-pack.md` + visuals | F6 export |
 | 6. Log founder reply | `founder-inbox.md`, `decision-log.md` | Manual (Phase 2+ webhook) |
 | 7. Publish | **Blocked** — no access | Out of scope |
 

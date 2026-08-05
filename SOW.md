@@ -14,7 +14,7 @@
 
 ## 1. Background
 
-AiFinPay needs consistent, brand-safe social content. Ana (operator) already runs a **file-based MVP** in `operator/` and `knowledge/` — content plans, approval packs, designer briefs, founder inbox. The org repo [`coinsecuritiescompany/AiFinPay-smm`](https://github.com/coinsecuritiescompany/AiFinPay-smm) is a **production-oriented beta** with FastAPI, Next.js, 28 agent roles, 21 channel contracts, Celery autopilot, Postiz, and analytics — designed for several isolated workspaces, not for Ana's immediate weekly workflow.
+AiFinPay needs consistent, brand-safe social content. Ana (operator) already runs a **file-based MVP** in `operator/` and `knowledge/` — content plans, approval packs, founder inbox. The org repo [`coinsecuritiescompany/AiFinPay-smm`](https://github.com/coinsecuritiescompany/AiFinPay-smm) is a **production-oriented beta** with FastAPI, Next.js, 28 agent roles, 21 channel contracts, Celery autopilot, Postiz, and analytics — designed for several isolated workspaces, not for Ana's immediate weekly workflow.
 
 Developer guidance (@pironmind / gist by daochild, to Ana): **planning first**, then build; **reasonable features only**; tool that **saves operator time**; work in Ana's repo. **Confirmed 2026-07-24:** @pironmind finishes `AiFinPay-smm` as production “farm”; Ana builds a separate thin MVP — compare effectiveness later. The linked Google Sheet on "minimal functionality" was **wrong** (empty smart-contracts tab) — scope is derived from local operator reality + `brand-pack-v1.md` + Phase 0 docs, trimmed to Ana MVP.
 
@@ -39,7 +39,7 @@ Success = Ana spends less time on repetitive copy/QC/packaging; founder still ap
 | F3 | **Brand / claim check** | Flag `TBD`, forbidden claims, off-brand tone, wrong CTA domain (must be `aifinpay.io` per founder decision). Block or warn before export. |
 | F4 | **Human approval queue** | Drafts land in structured approval records (DB or markdown export matching `post-for-approval.md`). No publish side effect. |
 | F5 | **Content plan helper** | Suggest or fill rows in 14-day plan format (`LI-1`, platform, theme, status). |
-| F6 | **Export / handoff** | Generate designer brief + founder approve pack from approved draft (templates in `operator/templates/`). |
+| F6 | **Export / handoff** | Generate founder approve pack + image prompt pack from approved draft (templates in `operator/templates/`). |
 
 **Optional stretch (after F1–F6 stable):** single-page local UI or Cursor skill hook — not required for week-1 value.
 
@@ -57,7 +57,7 @@ Success = Ana spends less time on repetitive copy/QC/packaging; founder still ap
 | Web live research (Tavily/Serper) | Brand-pack is canon; web = Phase 2+ |
 | Google Drive / Notion ingest | Manual markdown/PDF upload first |
 | Docker Compose full stack tonight | Planning only until SOW approved |
-| Visual/image generation | Designer owns visuals |
+| Visual/image generation | Operator owns via ChatGPT + Figma logo composite |
 | Replacing Cursor skills entirely | Tool augments existing `brand-grounded-copy` workflow |
 
 ---
@@ -68,7 +68,7 @@ Success = Ana spends less time on repetitive copy/QC/packaging; founder still ap
 |---|-----------|------------------------|
 | S1 | **Faster drafts** | New post brief → grounded draft in one step (target: &lt;10 min vs ~30+ manual). |
 | S2 | **Safer copy** | System surfaces `TBD`/forbidden claims before she sends to founder. |
-| S3 | **Less copy-paste** | Approval pack + designer brief export matches existing templates. |
+| S3 | **Less copy-paste** | Approval pack + image prompt pack export matches existing templates. |
 | S4 | **Same gates** | Nothing marked "published"; founder ✅ still required. |
 | S5 | **Visible progress** | Planning docs + thin API in her GitHub repo; founder sees direction without operator files. |
 

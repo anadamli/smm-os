@@ -21,15 +21,15 @@ A **personal operator tool** (not the full 28-agent `AiFinPay-smm` farm): ingest
 |-----------|--------|----------|
 | Planning & alignment | Done (2026-07-24) | SOW, gap analysis, MVP plan; @pironmind confirmed thin tool in this repo |
 | **Slice 1 — Knowledge** | **Done** (2026-07-24) | Brand ingest script, `/v1/search`, retrieval eval (`scripts/`, `eval/`) |
-| Slice 2 — Draft + QC | Next | `POST /v1/drafts` not started |
-| Slice 3 — Export | Planned | Template export to approval packs |
+| **Slice 2 — Draft + QC** | **Done** (2026-07-27) | `POST /v1/drafts`, brand guardian, `scripts/draft_post.py` |
+| Slice 3 — Export | Next | Template export to approval packs |
 | Dashboard / agents | Deferred | See Phase 0 docs for long-term reference only |
 
 ---
 
 ## What is local only (not in this repo)
 
-- Social post drafts, Wave 1 publish packs, designer handoffs
+- Social post drafts, Wave 1 publish packs, image assets
 - `knowledge/brand-pack-v1.md` and client sources (ingested locally via env path)
 - Operator inbox, decision logs, founder chat exports
 
